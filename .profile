@@ -1,12 +1,10 @@
 # ~/.profile: executed by the command interpreter for login shells.
-# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
-# exists.
-# see /usr/share/doc/bash/examples/startup-files for examples.
-# the files are located in the bash-doc package.
 
-# the default umask is set in /etc/profile; for setting the umask
-# for ssh logins, install and configure the libpam-umask package.
-#umask 022
+# ignore duplicate additions to $PATH
+case ":$PATH:" in
+    *":$new_entry:"*) :;; # already there
+    *) PATH="$new_entry:$PATH";;
+esac
 
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
@@ -20,3 +18,15 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
+# set GOPATH
+export GOPATH=$HOME/projects/go
+export PATH=$PATH:$GOPATH/bin
+
+# preferred editor
+export EDITOR="vim"
+
+#set endless history
+export HISTCONTROL=ignoreboth:erasedups
+export HISTSIZE=1000
+
