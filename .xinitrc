@@ -1,6 +1,6 @@
 #!/bin/sh
 
-feh --bg-fill ~/wallpapers/fireworks.jpg
+feh --bg-fill $HOME/wallpapers/fireworks.jpg
 redshift -l "42:-89" &
 while true; do
     dateval="$(date +"%A %d %B | %l:%M %P")"

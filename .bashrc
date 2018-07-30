@@ -11,5 +11,5 @@ NOCOLOR="\[\033[00m\]"
 PS1="$COLOR1\u$COLOR2@$COLOR3\h$NOCOLOR:$COLOR2\w$NOCOLOR\$ "
 export EDITOR="vim"
 
-. ~/.bash_aliases
-export PATH=~/bin:$PATH
+. $HOME/.bash_aliases
+export PATH=$HOME/go/bin:$PATH
