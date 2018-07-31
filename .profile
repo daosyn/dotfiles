@@ -20,13 +20,13 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 # set GOPATH
-export GOPATH=$HOME/projects/go
-export PATH=$PATH:$GOPATH/bin
+GOPATH=$HOME/projects/go
+PATH=$GOPATH/bin:$PATH
 
 # preferred editor
-export EDITOR="vim"
+EDITOR="vim"
 
-#set endless history
-export HISTCONTROL=ignoreboth:erasedups
-export HISTSIZE=1000
+# set endless history
+HISTCONTROL=ignoreboth:erasedups
+HISTSIZE=1000
 
