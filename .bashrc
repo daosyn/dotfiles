@@ -1,7 +1,7 @@
 # set endless history
 shopt -s histappend
-HISTCONTROL=ignoreboth:erasedups
-HISTSIZE=1000
+export HISTCONTROL=ignoreboth:erasedups
+export HISTSIZE=1000
 
 # colored prompt
 COLOR1="\[\033[01;31m\]"
@@ -12,12 +12,12 @@ NOCOLOR="\[\033[00m\]"
 PS1="$COLOR1\u$COLOR2@$COLOR3\h$NOCOLOR:$COLOR2\w$NOCOLOR\$ "
 
 # preferred editor
-EDITOR="vim"
+export EDITOR="vim"
+
+# set GOPATH
+export GOPATH=$HOME/projects/go
+export PATH=$GOPATH/bin:$PATH
 
 # source aliases
 . $HOME/.bash_aliases
-
-# set GOPATH
-GOPATH=$HOME/projects/go
-PATH=$GOPATH/bin:$PATH
 
