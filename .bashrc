@@ -9,7 +9,7 @@ COLOR2="\[\033[01;36m\]"
 COLOR3="\[\033[01;34m\]"
 NOCOLOR="\[\033[00m\]"
 
-PS1="$COLOR1\u$COLOR2@$COLOR3\h$NOCOLOR:$COLOR2\w$NOCOLOR\$ "
+PS1="$COLOR1\u$COLOR2@$COLOR3\h$NOCOLOR[$COLOR2\W$NOCOLOR]: "
 
 # preferred editor
 export EDITOR="vim"
