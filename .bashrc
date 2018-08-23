@@ -11,12 +11,12 @@ export GIT_PS1_SHOWCOLORHINTS=true
 . $HOME/.git-prompt
 
 # colored prompt
-COLOR1="\[\033[01;35m\]"
-COLOR2="\[\033[01;36m\]"
-COLOR3="\[\033[01;34m\]"
+RED="\[\033[01;31m\]"
+MAGENTA="\[\033[01;35m\]"
+YELLOW="\[\033[01;93m\]"
 NOCOLOR="\[\033[00m\]"
 
-PS1="$COLOR1\u$COLOR2@$COLOR3\h$NOCOLOR [$COLOR2\W$NOCOLOR]\$(__git_ps1 ' (%s)'): "
+PS1="$RED\h$YELLOW [\W]$MAGENTA\$(__git_ps1 ' (%s)')$NOCOLOR: "
 
 # preferred editor
 export EDITOR="vim"
