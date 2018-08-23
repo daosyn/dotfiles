@@ -1,3 +1,4 @@
+colo default
 syntax on
 filetype on
 
