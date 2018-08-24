@@ -19,14 +19,3 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-# set GOPATH
-GOPATH=$HOME/projects/go
-PATH=$GOPATH/bin:$PATH
-
-# preferred editor
-EDITOR="vim"
-
-# set endless history
-HISTCONTROL=ignoreboth:erasedups
-HISTSIZE=1000
-
