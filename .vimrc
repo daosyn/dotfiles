@@ -1,4 +1,4 @@
-colo default
+colo zellner
 syntax on
 filetype on
 
