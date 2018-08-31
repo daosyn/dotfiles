@@ -3,3 +3,4 @@
 3. `git --work-tree=$HOME checkout`
 4. `. $HOME/.bashrc`
 5. `config config --local status.showUntrackedFiles no`
+
