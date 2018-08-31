@@ -1,3 +1,6 @@
+
 [user]
-    name=daosyn
-    email=daosyn@gmail.com
+	name = daosyn
+	email = daosyn@gmail.com
+[credentials]
+	helper = store
