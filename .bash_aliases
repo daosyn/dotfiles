@@ -6,3 +6,4 @@ alias grep='grep --color=auto'
 alias hg='history | grep'
 
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias godao='cd $GOPATH/src/github.com/daosyn'
