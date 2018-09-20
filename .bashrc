@@ -30,4 +30,5 @@ export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 export GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpg-connect-agent updatestartuptty /bye
 gpgconf --launch gpg-agent
