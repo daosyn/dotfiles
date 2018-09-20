@@ -2,3 +2,5 @@
 	name = daosyn
 	email = daosyn@gmail.com
 	signingkey = 927FAC0FEF5F6684
+[commit]
+	gpgsign = true
