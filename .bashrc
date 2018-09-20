@@ -23,7 +23,7 @@ export EDITOR="vim"
 
 # set GOPATH
 export GOPATH=$HOME/projects/go
-export PATH=$GOPATH/bin:$PATH
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 # source aliases
 . $HOME/.bash_aliases
