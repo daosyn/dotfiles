@@ -28,3 +28,6 @@ export PATH=$GOPATH/bin:$PATH
 # source aliases
 . $HOME/.bash_aliases
 
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
