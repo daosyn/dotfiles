@@ -10,5 +10,4 @@ alias projects='cd $HOME/projects'
 alias hg='history | grep'
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias git-sign-all='git rebase -i --root --exec "git commit --amend --no-edit --no-verify -S"'
-alias blog='hugo server -D --bind 0.0.0.0 --baseURL 100.115.92.2/'
 
