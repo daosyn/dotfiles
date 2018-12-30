@@ -1,4 +1,4 @@
-colo zellner
+colo slate
 syntax on
 filetype on
 
@@ -20,4 +20,3 @@ set wrap
 "incremental/highlight
 set incsearch
 set hlsearch
-
