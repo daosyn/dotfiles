@@ -26,7 +26,7 @@ export GOPATH=$HOME/projects/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 # source aliases
-. $HOME/.bash_aliases
+. $HOME/.aliases
 
 export GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)

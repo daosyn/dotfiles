@@ -6,11 +6,9 @@ filetype on
 set autoindent
 set smartindent
 
-"tabs are 4 spaces
+"tab configuration
 set shiftwidth=4
 set tabstop=4
-set softtabstop=4
-set expandtab
 
 "find stuff
 set number
