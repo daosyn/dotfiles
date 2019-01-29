@@ -1,6 +1,6 @@
 #!/bin/sh
 
-feh --bg-fill $HOME/wallpapers/colors.jpg
+feh --bg-fill $WALLPAPER
 redshift -l "42:-89" &
 while true; do
     battval="$(cat /sys/class/power_supply/BAT0/capacity)"

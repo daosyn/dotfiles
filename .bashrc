@@ -28,6 +28,9 @@ export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 # source aliases
 . $HOME/.aliases
 
+# set wallpaper
+export WALLPAPER=$HOME/wallpapers/colors.jpg
+
 export GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpg-connect-agent updatestartuptty /bye
