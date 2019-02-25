@@ -1,4 +1,4 @@
-colo slate
+colorscheme slate
 filetype plugin indent on
 syntax on
 
