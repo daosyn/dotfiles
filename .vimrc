@@ -4,6 +4,7 @@ syntax on
 
 "lazy formatting
 set autoindent
+set backspace=indent,eol,start
 set smartindent
 
 "tab configuration
