@@ -5,7 +5,9 @@ alias subupdate='git submodule foreach git pull origin master'
 
 # ls
 alias ll='ls -lh'
-alias ls='ls --color=auto'
+[[ `uname -s` = "Linux" ]] && \
+alias ls='ls --color=auto' || \
+alias ls='ls -G'
 
 # shortcuts
 alias daosyn='cd $GOPATH/src/github.com/daosyn'
