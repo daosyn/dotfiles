@@ -15,6 +15,7 @@ alias projects='cd $HOME/projects'
 
 # specifics
 alias aptupdate='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y'
+alias beet='beet -c $HOME/.beetconfig'
 alias brewupdate='brew update && brew upgrade && brew cleanup'
 alias hugodaemon='hugo serve -D > /dev/null &'
 alias search='history | grep'
