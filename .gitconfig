@@ -1,7 +1,7 @@
 [user]
 	name = daosyn
 	email = brandon@daosyn.info
-	signingkey = 927FAC0FEF5F6684
+	signingkey = 9FB10C48910A6A618D70F0A5927FAC0FEF5F6684
 [commit]
 	gpgsign = true
 [pull]
