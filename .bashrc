@@ -18,7 +18,9 @@ BLUE="\[\e[34m\]"
 MAGENTA="\[\e[35m\]"
 NOCOLOR="\[\e[39m\]"
 
-PS1="$RED\u$MAGENTA@$YELLOW\h\
+PS1="$RED\u\
+$MAGENTA@\
+$YELLOW\h\
 $BLUE[\W]\
 $GREEN\$(__git_ps1 '(%s)')\
 $NOCOLOR: "
@@ -42,5 +44,5 @@ gpg-connect-agent updatestartuptty /bye
 gpgconf --launch gpg-agent
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
