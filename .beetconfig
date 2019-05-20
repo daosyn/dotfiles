@@ -1,4 +1,6 @@
 directory: /var/host/media/removable/daosyn-stash/music
-plugins: fetchart
+plugins: fetchart duplicates
 ui:
   color: yes
+import:
+  move: yes
