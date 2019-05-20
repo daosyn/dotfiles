@@ -14,10 +14,6 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 
-"show whitespace
-set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,space:·
-set list
-
 "find stuff
 set number
 set showmatch
