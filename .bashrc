@@ -18,19 +18,21 @@ GIT_PS1_SHOWCOLORHINTS=true
 . $HOME/.gitprompt
 
 # colored prompt
-RED="\[\e[31m\]"
-GREEN="\[\e[32m\]"
-YELLOW="\[\e[33m\]"
-BLUE="\[\e[34m\]"
-MAGENTA="\[\e[35m\]"
-NOCOLOR="\[\e[39m\]"
+RED="\[\033[0;31m\]"
+GREEN="\[\033[0;32m\]"
+YELLOW="\[\033[0;33m\]"
+BLUE="\[\033[0;34m\]"
+MAGENTA="\[\033[0;35m\]"
+CYAN="\[\033[0;36m\]"
+GREY="\[\033[0;37m\]"
+NOCOLOR="\[\033[0;37m\]"
 
-PS1="$RED\u\
-$MAGENTA@\
-$YELLOW$NICKNAME\
-$BLUE[\W]\
-$GREEN\$(__git_ps1 '(%s)')\
-$NOCOLOR: "
+PS1="$YELLOW[\
+$RED\u$YELLOW@$RED$NICKNAME\
+$YELLOW:$BLUE\W\
+$MAGENTA\$(__git_ps1 '(%s)')\
+$YELLOW]\
+$RED\$ $NOCOLOR"
 
 # preferred editor
 export EDITOR="vim"
