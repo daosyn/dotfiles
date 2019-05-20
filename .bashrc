@@ -1,3 +1,10 @@
+# sentimentality
+if [ ! -f "$HOME/.nickname" ]; then
+    read -p "give your machine a name: " name
+    echo "export NICKNAME=\"$name\"" > $HOME/.nickname
+fi
+. $HOME/.nickname
+
 # set endless history
 shopt -s histappend
 HISTCONTROL=ignoreboth:erasedups
@@ -20,7 +27,7 @@ NOCOLOR="\[\e[39m\]"
 
 PS1="$RED\u\
 $MAGENTA@\
-$YELLOW\h\
+$YELLOW$NICKNAME\
 $BLUE[\W]\
 $GREEN\$(__git_ps1 '(%s)')\
 $NOCOLOR: "
@@ -30,7 +37,7 @@ export EDITOR="vim"
 
 # set GOPATH
 export GOPATH=$HOME/projects/go
-export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+export PATH=$HOME/.local/bin:$PATH:/usr/local/go/bin:$GOPATH/bin
 
 # source aliases
 . $HOME/.aliases
