@@ -14,7 +14,6 @@ HISTSIZE=1000
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUNTRACKEDFILES=true
-GIT_PS1_SHOWCOLORHINTS=true
 . $HOME/.gitprompt
 
 # colored prompt
@@ -30,7 +29,7 @@ NOCOLOR="\[\033[0;37m\]"
 PS1="$YELLOW[\
 $RED\u$YELLOW@$RED$NICKNAME\
 $YELLOW:$BLUE\W\
-$MAGENTA\$(__git_ps1 '(%s)')\
+$MAGENTA\$(__git_ps1 ' %s')\
 $YELLOW]\
 $RED\$ $NOCOLOR"
 
@@ -41,11 +40,16 @@ export EDITOR="vim"
 export GOPATH=$HOME/projects/go
 export PATH=$HOME/.local/bin:$PATH:/usr/local/go/bin:$GOPATH/bin
 
-# source aliases
-. $HOME/.aliases
-
 # set wallpaper
 export WALLPAPER=$HOME/wallpapers/colors.jpg
+
+# set aliases
+. $HOME/.aliases
+
+# set JAVA_HOME
+if [ -f "$HOME/.javahome" ]; then
+    . $HOME/.javahome
+fi
 
 export GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
