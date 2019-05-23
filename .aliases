@@ -1,5 +1,5 @@
 # packages
-alias aptupdate='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y'
+alias aptupdate='sudo apt update && sudo apt dist-upgrade -y && sudo apt autoremove -y'
 alias brewupdate='brew update && brew upgrade && brew cleanup'
 
 # git
