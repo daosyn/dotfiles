@@ -6,5 +6,7 @@
 	gpgsign = true
 [pull]
 	rebase = true
+[fetch]
+	prune = true
 [color]
 	ui = auto
