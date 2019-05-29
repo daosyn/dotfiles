@@ -7,8 +7,8 @@
 [commit]
 	gpgsign = true
 [fetch]
-    prune = true
+	prune = true
 [log]
-    showsignature = true
+	showsignature = true
 [pull]
 	rebase = true
