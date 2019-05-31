@@ -20,4 +20,5 @@ alias projects='cd $HOME/projects'
 # specifics
 alias beet='beet -c $HOME/.beetconfig'
 alias hugodaemon='hugo serve -D > /dev/null &'
+alias musync='rsync --delete --progress -auv'
 
