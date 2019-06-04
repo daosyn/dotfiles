@@ -14,6 +14,7 @@ HISTCONTROL=ignoreboth:erasedups
 HISTIGNORE='history:ll:ls'
 HISTFILESIZE=
 HISTSIZE=
+PROMPT_COMMAND='history -a'
 
 # git
 GIT_PS1_SHOWDIRTYSTATE=true
