@@ -1,14 +1,16 @@
 [user]
 	name = daosyn
 	email = brandon@daosyn.info
-	signingkey = 9FB10C48910A6A618D70F0A5927FAC0FEF5F6684
+	signingKey = 9FB10C48910A6A618D70F0A5927FAC0FEF5F6684
 [color]
 	ui = auto
 [commit]
-	gpgsign = true
+	gpgSign = true
 [fetch]
 	prune = true
 [log]
-	showsignature = true
+	showSignature = true
 [pull]
 	rebase = true
+[stash]
+	showPatch = true
