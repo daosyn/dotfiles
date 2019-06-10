@@ -28,3 +28,6 @@ autocmd FileType html setlocal shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType css setlocal shiftwidth=2 softtabstop=2 tabstop=2
 
+"netrw
+let g:netrw_banner=0
+let g:netrw_liststyle=3
