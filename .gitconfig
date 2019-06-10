@@ -8,9 +8,9 @@
 	gpgSign = true
 [fetch]
 	prune = true
-[log]
-	showSignature = true
 [pull]
 	rebase = true
 [stash]
 	showPatch = true
+[alias]
+	tree = log --graph --oneline
