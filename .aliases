@@ -9,7 +9,7 @@ alias subupdate='git submodule foreach git pull origin master'
 
 # ls
 alias ll='ls -lh'
-[[ `uname -s` = "Linux" ]] && \
+[[ `uname -s` = 'Linux' ]] && \
 alias ls='ls --color=auto' || \
 alias ls='ls -G'
 
@@ -20,5 +20,5 @@ alias projects='cd $HOME/projects'
 # specifics
 alias beet='beet -c $HOME/.beetconfig'
 alias hugodaemon='hugo serve -D > /dev/null &'
-alias musync='rsync --delete --progress -auv'
+alias musync='rsync --delete --progress --size-only -auv'
 
