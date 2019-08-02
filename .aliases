@@ -1,6 +1,6 @@
 # packages
 alias aptupdate='sudo apt update && sudo apt dist-upgrade -y && sudo apt autoremove -y'
-alias brewupdate='brew update && brew upgrade && brew cleanup'
+alias brewupdate='brew update && brew upgrade && brew cask upgrade && brew cleanup'
 
 # git
 alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
