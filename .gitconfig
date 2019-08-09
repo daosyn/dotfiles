@@ -14,3 +14,4 @@
 	showPatch = true
 [alias]
 	tree = log --graph --oneline
+	stat = diff --stat
