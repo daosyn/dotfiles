@@ -1,5 +1,5 @@
-directory: /var/host/media/removable/daosyn-stash/music
-plugins: fetchart duplicates lastgenre
+directory: /media/daosyn/daosyn-stash/music
+plugins: fetchart embedart duplicates lastgenre
 ui:
   color: yes
 import:

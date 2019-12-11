@@ -30,7 +30,7 @@ BLUE="\[\033[0;34m\]"
 MAGENTA="\[\033[0;35m\]"
 CYAN="\[\033[0;36m\]"
 GREY="\[\033[0;37m\]"
-NOCOLOR="\[\033[0;37m\]"
+NOCOLOR="\[\033[0;38m\]"
 
 PS1="$YELLOW[\
 $RED\u$YELLOW@$RED$NICKNAME\
