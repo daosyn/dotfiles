@@ -13,7 +13,7 @@ brew "nvm"
 brew "openssl"
 brew "pinentry-mac"
 brew "vim"
-brew "koekeishiya/formulae/chunkwm"
+brew "koekeishiya/formulae/yabai"
 
 cask "eclipse-java"
 cask "google-chrome"
