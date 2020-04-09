@@ -1,4 +1,4 @@
-directory: /media/daosyn/daosyn-stash/music
+directory: /media/daosyn/daotunes/music
 plugins: fetchart embedart duplicates lastgenre
 ui:
   color: yes
