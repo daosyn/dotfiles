@@ -6,6 +6,7 @@ alias brewupdate='brew update && brew upgrade && brew cask upgrade && brew clean
 alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias signall='git rebase -i --root --exec "git commit --amend --no-edit --no-verify -S"'
 alias subupdate='git submodule foreach git pull origin master'
+alias delbr='git branch | grep -v '^*' | xargs git branch -D'
 
 # ls
 alias ll='ls -lh'
