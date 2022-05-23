@@ -1,6 +1,16 @@
-directory: /media/daosyn/daotunes/music
-plugins: fetchart embedart duplicates lastgenre
+directory: /media/daosyn/bigboi/music
+plugins:
+  - convert
+  - duplicates
+  - embedart
+  - fetchart
+  - ftintitle
+  - lastgenre
+artist_credit: yes
+asciify_paths: yes
 ui:
   color: yes
 import:
   move: yes
+ftintitle:
+  drop: yes
