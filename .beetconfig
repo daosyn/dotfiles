@@ -6,6 +6,7 @@ plugins:
   - fetchart
   - ftintitle
   - lastgenre
+  - lastimport
 artist_credit: yes
 asciify_paths: yes
 ui:
@@ -14,3 +15,5 @@ import:
   move: yes
 ftintitle:
   drop: yes
+lastfm:
+  user: daosyn
