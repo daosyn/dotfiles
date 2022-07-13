@@ -17,3 +17,5 @@
 	stat = diff --stat
 [core]
 	autocrlf = input
+[push]
+	autoSetupRemote = true
