@@ -9,11 +9,16 @@ plugins:
   - lastimport
 artist_credit: yes
 asciify_paths: yes
-ui:
-  color: yes
-import:
-  move: yes
+fetchart:
+  deinterlace: true
+  enforce_ratio: true
+  maxwidth: 400
+  quality: 75
 ftintitle:
   drop: yes
+import:
+  move: yes
 lastfm:
   user: daosyn
+ui:
+  color: yes
