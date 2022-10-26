@@ -1,6 +1,6 @@
 # packages
 alias aptup='sudo apt update && sudo apt dist-upgrade -y && sudo apt autoremove -y'
-alias brewup='brew update && brew upgrade && brew cask upgrade && brew cleanup'
+alias brewup='brew update && brew upgrade && brew cleanup'
 alias snapup='sudo snap refresh'
 
 # git
