@@ -16,6 +16,7 @@ brew "vim"
 brew "koekeishiya/formulae/yabai"
 
 cask "eclipse-java"
+cask "firefox"
 cask "google-chrome"
 cask "insomnia"
 cask "iterm2"
