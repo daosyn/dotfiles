@@ -10,7 +10,7 @@ esac
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
-	. "$HOME/.bashrc"
+        . "$HOME/.bashrc"
     fi
 fi
 
@@ -24,5 +24,12 @@ if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
     exec startx
 fi
 
-# Set PATH, MANPATH, etc., for Homebrew.
+# set PATH, MANPATH, etc., for homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# gpg
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpg-connect-agent updatestartuptty /bye
+gpgconf --launch gpg-agent
+
