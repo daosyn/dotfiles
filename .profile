@@ -15,7 +15,7 @@ if [ -n "$BASH_VERSION" ]; then
 fi
 
 # set PATH so it includes HOME bin if it exists
-if [ -d "$HOME/bin" ] ; then
+if [ -d "$HOME/bin" ]; then
     PATH="$HOME/bin:$PATH"
 fi
 
@@ -25,7 +25,9 @@ if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
 fi
 
 # set PATH, MANPATH, etc., for homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [ -e /opt/homebrew/bin/brew ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
 
 # gpg
 export GPG_TTY="$(tty)"
