@@ -35,3 +35,9 @@ export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpg-connect-agent updatestartuptty /bye
 gpgconf --launch gpg-agent
 
+# nvm
+export NVM_DIR=~/.nvm
+if type brew &> /dev/null; then
+    source $(brew --prefix nvm)/nvm.sh
+fi
+
