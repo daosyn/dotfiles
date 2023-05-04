@@ -12,6 +12,8 @@ brew "nvm"
 brew "openssl"
 brew "pinentry-mac"
 brew "vim"
+brew "awscli"
+brew "terraform"
 
 cask "eclipse-java"
 cask "firefox"
