@@ -52,3 +52,9 @@ export NVM_DIR="$HOME/.nvm"
 # set wallpaper
 export WALLPAPER=$HOME/wallpapers/colors.jpg
 
+# gpg
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpg-connect-agent updatestartuptty /bye
+gpgconf --launch gpg-agent
+

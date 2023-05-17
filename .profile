@@ -29,12 +29,6 @@ if [ -e /opt/homebrew/bin/brew ]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-# gpg
-export GPG_TTY="$(tty)"
-export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-gpg-connect-agent updatestartuptty /bye
-gpgconf --launch gpg-agent
-
 # nvm
 export NVM_DIR=~/.nvm
 if type brew &> /dev/null; then
