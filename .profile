@@ -6,14 +6,6 @@ case ":$PATH:" in
     *) PATH="$new_entry:$PATH";;
 esac
 
-# if running bash
-if [ -n "$BASH_VERSION" ]; then
-    # include .bashrc if it exists
-    if [ -f "$HOME/.bashrc" ]; then
-        . "$HOME/.bashrc"
-    fi
-fi
-
 # set PATH so it includes HOME bin if it exists
 if [ -d "$HOME/bin" ]; then
     PATH="$HOME/bin:$PATH"
@@ -33,5 +25,13 @@ fi
 export NVM_DIR=~/.nvm
 if type brew &> /dev/null; then
     source $(brew --prefix nvm)/nvm.sh
+fi
+
+# if running bash
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+        . "$HOME/.bashrc"
+    fi
 fi
 

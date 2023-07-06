@@ -19,3 +19,5 @@
 	autocrlf = input
 [push]
 	autoSetupRemote = true
+[rebase]
+	autoStash = true
