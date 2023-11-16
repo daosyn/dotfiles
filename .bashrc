@@ -55,6 +55,6 @@ export WALLPAPER=$HOME/wallpapers/colors.jpg
 # gpg
 export GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-gpg-connect-agent updatestartuptty /bye | cowsay -f cock
+gpg-connect-agent updatestartuptty /bye | cowsay -f hellokitty
 gpgconf --launch gpg-agent
 
