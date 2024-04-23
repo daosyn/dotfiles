@@ -11,11 +11,6 @@ if [ -d "$HOME/bin" ]; then
     PATH="$HOME/bin:$PATH"
 fi
 
-# autostart x
-if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-    exec startx
-fi
-
 # set PATH, MANPATH, etc., for homebrew
 if [ -e /opt/homebrew/bin/brew ]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -33,5 +28,10 @@ if [ -n "$BASH_VERSION" ]; then
     if [ -f "$HOME/.bashrc" ]; then
         . "$HOME/.bashrc"
     fi
+fi
+
+# autostart x
+if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+    exec startx
 fi
 
