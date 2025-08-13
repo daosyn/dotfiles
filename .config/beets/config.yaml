@@ -1,4 +1,5 @@
-directory: /media/daosyn/bigboi/music
+library: /media/daosyn/daotunes/beets/library.db
+directory: /media/daosyn/daotunes/music
 plugins:
   - convert
   - duplicates

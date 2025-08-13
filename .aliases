@@ -5,8 +5,6 @@ alias snapup='sudo snap refresh'
 
 # git
 alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias signall='git rebase -i --root --exec "git commit --amend --no-edit --no-verify -S"'
-alias subupdate='git submodule foreach git pull origin master'
 alias delbr='git branch | grep -v '^*' | xargs git branch -D'
 
 # ls
@@ -15,12 +13,7 @@ alias ll='ls -lh'
 alias ls='ls --color=auto' || \
 alias ls='ls -G'
 
-# shortcuts
-alias daosyn='cd $GOPATH/src/github.com/daosyn'
-alias projects='cd $HOME/projects'
-
 # specifics
-alias beet='beet -c $HOME/.beetconfig'
 alias hugodaemon='hugo serve -D > /dev/null &'
 alias musync='rsync --delete --progress --size-only -auv'
 
