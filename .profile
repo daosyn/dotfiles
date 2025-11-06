@@ -30,8 +30,3 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-# autostart x
-if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-    exec startx
-fi
-

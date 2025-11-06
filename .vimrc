@@ -1,5 +1,5 @@
 "general
-colorscheme slate
+colorscheme default
 filetype plugin indent on
 syntax on
 
